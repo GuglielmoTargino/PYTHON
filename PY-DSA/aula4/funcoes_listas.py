@@ -6,7 +6,8 @@ Created on Thu Jul 11 19:50:23 2024
 Vesion: v0
 """
 
-listas=[[2,3,5],[5,6,8]]; # lista dentro de lista
-lista2=[8,6,2];
-
-print(listas+lista2);
+lista=["dara","joe","joe"];
+g=lista.index("joe");
+print(g);
+c=len(lista);
+print(c);
