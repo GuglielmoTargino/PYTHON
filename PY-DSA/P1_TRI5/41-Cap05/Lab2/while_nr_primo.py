@@ -8,22 +8,12 @@ Versão: v0
 
 
         
-    
+a=4
 
-a=10
-i=1
-x=0
-y=0
-cont=0
-
-
-
-while i<=a:
-    if a//i
-    
-        print(i)
-      
-    i+=1
+while a<=50:    
+    if not(a%2==0 or a%3==0):        
+        print(f'{a} é Número primo')
+    a+=1  
         
-print('fim loop',cont)
+print('fim loop')
 
