@@ -10,7 +10,7 @@ Versão: v0
         
 a=4
 
-while a<=50:    
+while a<=100:    
     if not(a%2==0 or a%3==0):        
         print(f'{a} é Número primo')
     a+=1  
