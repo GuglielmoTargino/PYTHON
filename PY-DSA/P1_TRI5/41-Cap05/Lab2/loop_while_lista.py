@@ -8,7 +8,7 @@ Versão: v0
 
 primo=[]
 
-for num in range(2,20):
+for num in range(2,10):
     
     # variavel de controle
     eh_primo=True
@@ -17,9 +17,11 @@ for num in range(2,20):
     # loop para verificar se o numero é primo
     i=2    
     while i<=num//2:
+        
        
         if num %i==0: # e resto for 1 significa que não é primo
             eh_primo=False
+            print (num)
             
             break
         i+=1
