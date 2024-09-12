@@ -3,4 +3,7 @@
 
 arqv=open("C:/Users/Guglielmo H T/Desktop/Data_list.csv","r")
 lido=arqv.read()
-print(lido)
+row=lido.split(',')
+full_data=[]
+
+print(f"{row}\n")
