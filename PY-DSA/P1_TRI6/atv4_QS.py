@@ -1,7 +1,7 @@
-#Atividade entreg√°vel 4 da disciplina QS.
+#Atividade entreg·vel 4 da disciplina QS.
 #Aluno Guglielmo Targino.
-#vers√£o v0
-#Data 25set24
+#vers„o v1.
+#Data 26set24
 
 import unittest
 
@@ -11,10 +11,13 @@ def multiplicacao(a, b):
 
 class mult(unittest.TestCase):
     def teste_Mult(self):
-        self.assertEqual(multiplicacao(2.5, 8),20)
+        self.assertEqual(multiplicacao(2.5, 8),20)#testa se o resultado È 20.
+        self.assertEqual(multiplicacao(25, 2),50)#testa se o resultado È 50.
+        self.assertEqual(multiplicacao(5, 8),40)#testa se o resultado È 40.
+        self.assertEqual(multiplicacao(5, 9),43)#testa se o resultado È 43. Como 5x9=45, alerta sinal falso.
+        self.assertFalse(multiplicacao(2.5, 0))#testa se o resultado È falso.
+        self.assertTrue(multiplicacao(2.5, 0))#testa se o resultado È verdadeiro. Como 2.5x0=0. alerta sinal falso.
         
-    def teste_Mult2(self):
-        self.assertEqual(multiplicacao(5, 8),40)
 
 if __name__ == '__main__':
     unittest.main()
