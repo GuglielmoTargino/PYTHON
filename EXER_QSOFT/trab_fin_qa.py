@@ -1,41 +1,49 @@
 #Trabalho final qld software.
 #Aluno Guglielmo Targino.
 #versão v1.
-#Data 12out24
+#Data 17out24
 
 import unittest
 
 class Pessoa:
     def __init__(self,altura,peso):
+             
         self.altura=altura
         self.peso=peso
+      
+         
 
     def calcImc(self):
-        #fórmula para cálculo do imc
-        return self.peso/(self.altura**2)
         
-# Criando um objeto da classe Pessoa
+        #verifica se algum valor de entrada é menor ou igual a zero.        
+        if (self.altura and self.peso):
+            
+            #fórmula para cálculo do imc
+            return self.peso/(self.altura**2)
+        else:
+            return False
+        
+
 #prepara variáveis para testes
-valor1=1.72 #variavel para alura
-valor2=73.6 #variavel para peso
-esperado=24.88 #variavel para valor esperado
-pessoa1 = Pessoa(valor1,valor2)
+alt=0.62 #variavel para altura
+peso=595 #variavel para peso
+esperado=1547.87 #variavel para valor esperado
 
-#usando o método para calcular o imc e guarda o resultado 
-#arredondado para duas casas decimais na variável imc
-imc=pessoa1.calcImc()
-imc=round(imc,2)
+# Criando um objeto da classe Pessoa
+pessoa1 = Pessoa(alt,peso)
 
-#mostra o resultado do imc formatado com duas casas decimais.
-#print("Meu imc é {:.2f}".format(imc))
-print(imc)
 
+#testes unitários inicia aqui.
 class testeImc(unittest.TestCase):
      
     def test_imcIgual(self):
-        self.assertEqual(imc,esperado)
+        #around arredondado para duas casas decimais
+        #Aqui executa testes efetivos no método calcImc().
+        self.assertEqual(round(pessoa1.calcImc(),2),esperado)
+        
+        #aqui verifica o teste de valor inferior ou igual a zero foi digitado.
     def test_Falso(self):
-        self.assertFalse(imc,"não é falso")
+        self.assertTrue(round(pessoa1.calcImc()),"Por favor digite numeros positivos.")
         
 
 if __name__ == '__main__':
