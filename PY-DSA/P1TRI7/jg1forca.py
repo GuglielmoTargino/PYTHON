@@ -5,12 +5,25 @@
 #versão:v0.
 
 
-
+import random
 from os import name, system
 
-if name == 'nt':
-    system("cls")  # Windows
+def limpa_tela():
+    if name == 'nt2':
+        system("cls")  # Windows
    
-else:
-    system("clear")  # Linux/Mac
+    else:
+        system("clear")  # Linux/Mac
+        
+print('Bem vindo ao jogo da forca')
+
+palavra=['jaca','melao','abacaxi','vidro','agua','uva','jiboia','dara','nia']
+
+segredo=random.choice(palavra)
+print(segredo)
+
+for x in segredo:
+    print('_')
+
+
    
