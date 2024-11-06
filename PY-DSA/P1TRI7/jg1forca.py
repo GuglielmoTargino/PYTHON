@@ -9,14 +9,14 @@ import random
 from os import name, system
 
 def limpa_tela():
-    if name == 'nt2':
+    if name == 'nt':
         system("cls")  # Windows
    
     else:
         system("clear")  # Linux/Mac
         
 
-
+limpa_tela()
 palavra=['jaca','melao','abacaxi','vidro','agua','uva','jiboia','dara','nia']
 segredo=random.choice(palavra)
 print('Bem vindo ao jogo da forca')
@@ -42,12 +42,8 @@ while cnt<chance:
     for x in segredo:
         if x==jogador:
             revelacao[pt]=jogador
-            #print(revelacao)
             pt+=1
-        else:
-                      #revelacao[cnt]='_'
-            #print(revelacao)j
-            
+        else:            
             pt+=1
    
     cnt+=1
