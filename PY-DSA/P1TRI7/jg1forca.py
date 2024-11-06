@@ -15,15 +15,49 @@ def limpa_tela():
     else:
         system("clear")  # Linux/Mac
         
-print('Bem vindo ao jogo da forca')
+
 
 palavra=['jaca','melao','abacaxi','vidro','agua','uva','jiboia','dara','nia']
-
 segredo=random.choice(palavra)
-print(segredo)
+print('Bem vindo ao jogo da forca')
 
+chance=len(segredo)
+revelacao=[]
+print(segredo)
 for x in segredo:
-    print('_')
+    revelacao.append('_')
+    
+
+print(chance)
+print(revelacao)
+
+cnt=0
+pt=0
+
+
+
+while cnt<chance:
+    pt=0
+    jogador=input('digite uma letra por favor')
+    for x in segredo:
+        if x==jogador:
+            revelacao[pt]=jogador
+            #print(revelacao)
+            pt+=1
+        else:
+                      #revelacao[cnt]='_'
+            #print(revelacao)j
+            
+            pt+=1
+   
+    cnt+=1
+    print(revelacao)
+
+    
+print('perdeu')
+
+    
+    
 
 
    
