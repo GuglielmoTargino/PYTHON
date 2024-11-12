@@ -25,9 +25,9 @@ class Pessoa:
         
 
 #prepara variáveis para testes
-alt=1.73 #variavel para altura
-peso=73.6 #variavel para peso
-esperado=24.59 #variavel para valor esperado
+alt=1.72 #variavel para altura em metros
+peso=74.2 #variavel para peso kilogramas
+esperado=25.08 #variavel para valor esperado
 
 # Criando um objeto da classe Pessoa
 pessoa1 = Pessoa(alt,peso)
@@ -45,7 +45,8 @@ class testeImc(unittest.TestCase):
     def test_Falso(self):
         self.assertTrue(round(pessoa1.calcImc()),"Favor digitar números maiores que 0.")
      
-        #aqui verifica o teste de valor negativo.        
+        #aqui verifica o teste de valor negativo. 
+        #se não for menor que zero, significa teste aprovado
     def test_Neg(self):
          self.assertLess(round(pessoa1.calcImc()),0)
         
