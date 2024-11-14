@@ -6,24 +6,27 @@ Created on Thu Nov 14 15:44:27 2024
 """
 
 class Livro():
-    def __init__(self,titulo,isbn):
+    def __init__(self):
         
-        self.titulo=titulo
-        self.isbn=isbn
+        self.titulo="O grande Programador"
+        self.isbn=7978
         
         print("construtor chamado")
         
-    def Imprime(self,titulo,isbn):
-        print("Este é o livro %s e ISBN %d",titulo,isbn)
+    def Imprime(self):
+        print(livro.titulo)
+        print(livro.isbn)
+        
         
 
 
 
 
 
-livro=Livro("primeiro POO em Python",7878)
-print(livro.titulo)
-print(livro.isbn)
+livro=Livro()
+
+livro.Imprime()
+
         
         
         
