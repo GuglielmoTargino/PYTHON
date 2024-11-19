@@ -16,16 +16,37 @@ class Livro():
     def Imprime(self):
         print(livro.titulo)
         print(livro.isbn)
+
+class Carro():
+    
+    def __init__(self, a,b,c,d):
+        self.nome=a
+        self.ano=b
+        self.cor=c
+        self.motor=d
+        
+    def info(self):
+        print(self.ano)
+        print(self.motor)
         
         
+livro=Livro()    
+brava=Carro('Calebe',2000,'branco',1.6)
+        
 
 
 
 
 
-livro=Livro()
+brava.info()
+name=brava.nome
+print(name)
 
-livro.Imprime()
+lst={'guga',10}
+
+lst.remove(lst,'guga')
+
+print(lst)
 
         
         
