@@ -32,21 +32,19 @@ class Carro():
         
 livro=Livro()    
 brava=Carro('Calebe',2000,'branco',1.6)
-        
-
-
-
-
 
 brava.info()
 name=brava.nome
 print(name)
-
 lst={'guga',10}
 
-lst.remove(lst,'guga')
-
 print(lst)
+
+resu=hasattr(livro,"titulo")
+setattr(brava,'motor',1.8)
+resu2=brava.motor
+
+print(resu2)
 
         
         
