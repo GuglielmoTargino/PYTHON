@@ -5,30 +5,34 @@ Created on Thu Nov 14 15:44:27 2024
 @author: Guglielmo H T
 """
 
-class Animal():
-    def __init__(self,som,anda):
+class Animal:       
+    
+    def __init__(self, som,move):
         
         self.som=som
-        self.anda=anda        
+        self.move=move
         
     def Soar(self):
         pass
 
 class Gato(Animal):
     
-    def Soar():
+    def Soar(self):
         print("Gato mia")
+        print(self.som)
         
 class Cachorro(Animal):
     
-    def Soar():
+    def Soar(self):
         
         print("Cachorro late")
                
                
         
 
-lic=Cachorro("late", "pula")
+lic=Gato("mia","pula")
+print(lic.som)
+
 
 
 
