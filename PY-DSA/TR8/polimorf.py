@@ -25,9 +25,7 @@ class Cachorro(Animal):
     
     def Soar(self):
         
-        print("Cachorro late")
-               
-               
+        print("Cachorro late")               
         
 
 lic=Gato("mia","pula")
