@@ -18,5 +18,3 @@ print(type(arr1))
 arr1[1]=500
 
 print(arr1[1])
-
-
