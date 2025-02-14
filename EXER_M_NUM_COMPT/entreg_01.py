@@ -19,14 +19,13 @@ Data: 25fev25
 Versão: 01
 """
 
-import numpy as npy
 
-print(npy.__version__)
+a=10
+b=20
 
-arr1=npy.array([10,12,13])
-print(arr1[1])
+n_abs=a-b
 
-print(type(arr1))
-arr1[1]=500
+print (n_abs)
 
-print(arr1[1])
+print(abs(n_abs))
+
