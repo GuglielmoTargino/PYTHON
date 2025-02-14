@@ -4,7 +4,7 @@ Atividade Entregável 01-Métodos Numéricos Computacionais.
 
 Escreva um programa que peça ao usuário dois valores numéricos:
 um valor real exato e um valor aproximado. 
-O programa deve calcular e exibir:O erro absolutoO erro relativo
+O programa deve calcular e exibir:O erro absoluto e o erro relativo
 
 Fórmulas:
 Erro Absoluto = | Valor Exato - Valor Aproximado |
@@ -28,4 +28,9 @@ n_abs=a-b
 print (n_abs)
 
 print(abs(n_abs))
+
+nreal=int(input("digite um número real"))
+
+
+print(nreal)
 
