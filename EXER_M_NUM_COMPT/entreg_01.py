@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 """
 Atividade Entregável 01-Métodos Numéricos Computacionais.
 
@@ -19,18 +19,26 @@ Data: 25fev25
 Versão: 01
 """
 
+while True:  # loop para gantir que o valor digitdo seja um número exato.
+    try:
+        nreal = int(input("Por favor, digite um número inteiro: "))  
+        break  # Sai do loop se for true
+    except ValueError:  
+        print("Entrada inválida! Digite um número inteiro válido.") 
+        
+        
+while True:  # loop para garantir que o valor digitdo seja um númro aproximado.
+    try:
+        nfloat=float(input("Por favor digite um número aproximado."))  
+        break  # Sai do loop se for true
+    except ValueError:  
+        print("Entrada inválida! Digite um número inteiro válido.") 
+        
+    
+err_abs=abs(nreal-nfloat)
+err_rel=err_abs/(abs(nreal))
+print("erro absoluto é =", err_abs)
+print("erro relativo é",err_rel)
+    
 
-a=10
-b=20
-
-n_abs=a-b
-
-print (n_abs)
-
-print(abs(n_abs))
-
-nreal=int(input("digite um número real"))
-
-
-print(nreal)
 
