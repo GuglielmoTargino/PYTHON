@@ -6,6 +6,9 @@ Created on Fri Mar  7 15:43:00 2025
 """
 import numpy as gu
 
+
+
+
 arr5=gu.array([2,3,5,9,1])
 
 resu=gu.mean(arr5)
