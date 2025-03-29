@@ -14,7 +14,7 @@ class mult(unittest.TestCase):
         self.assertEqual(multiplicacao(2.5, 8),20)#testa se o resultado é 20.
         self.assertEqual(multiplicacao(25, 2),50)#testa se o resultado é 50.
         self.assertEqual(multiplicacao(5, 8),40)#testa se o resultado é 40.
-        self.assertEqual(multiplicacao(5, 9),43)#testa se o resultado é 43. Como 5x9=45, alerta sinal falso.
+        self.assertEqual(multiplicacao(5, 9),45)#testa se o resultado é 43. Como 5x9=45, alerta sinal falso.
         self.assertFalse(multiplicacao(2.5, 0))#testa se o resultado é falso.
         self.assertTrue(multiplicacao(2.5, 0))#testa se o resultado é verdadeiro. Como 2.5x0=0. alerta sinal falso.
         
