@@ -7,18 +7,20 @@ Created on Thu Mar 27 23:05:48 2025
 
 import pandas as pd
 
-df = pd.read_csv('csvFile2.csv')
+df = pd.read_csv('csvFile.csv') #Carrega arquivo csv integro.
+df1 = pd.DataFrame(df)
+print(df1)
 
-print(df)
+dfs = pd.read_csv('csvSujo2.csv') #Carrega arquivo csv sujo.
+df2 = pd.DataFrame(dfs)
+print(df2)
 
-df = pd.read_csv('csvSujo2.csv')
-print(df)
 
-df.dropna(subset=['nome'], inplace=True)
+dfs.dropna(subset=['nome'], inplace=True) #exclui linha com valor inconsistente de 
+#coluna nome.
+dfl=pd.DataFrame(dfs)
 
-dframe=pd.DataFrame(df)
-
-print(dframe)
+print(dfl)
 
 # Criando um DataFrame a partir de um dicionário
 data = {
@@ -29,6 +31,9 @@ data = {
 df3 = pd.DataFrame(data)
 
 
-print(df3['Coluna3'][0])
-print(data)
+
+#print(df3['Coluna3'][0])
+print(df3)
+
+
 
