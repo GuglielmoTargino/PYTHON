@@ -26,6 +26,8 @@ print(q1)
 print(variancia)
 print(desvio_padrao)
 
+x=0.154
+
 print(f"Equação ajustada:{variancia:.2f}")
 print(f"Equação ajustada:{desvio_padrao:.2f}")
 
@@ -37,4 +39,4 @@ correlacao = np.corrcoef(alturas, pesos)[0, 1]
 
 print(correlacao)
 
-print(f"Correlação person:{correlacao:.3f}")
+print(f"Correlação person:{x:.2f}")
