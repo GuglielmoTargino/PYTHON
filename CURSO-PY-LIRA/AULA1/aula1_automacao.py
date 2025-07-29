@@ -3,34 +3,30 @@
 #Data:11jul24.
 #Versão: v0
 
-import pyautogui
-import time
-import pandas
+import pyautogui as at
+import time as tmp
+import pandas as pd
 
-tabela=pandas.read_csv("clientes.csv")
+tabela=pd.read_csv("clientes.csv")
 print("olá futuro!")
 
 
-pyautogui.PAUSE=4
+at.PAUSE=4
 
 #linha é uma variável cria pelo programador
 
-
-
-
-
-pyautogui.press("win")
-pyautogui.write("chrome")
-pyautogui.press("enter")
-time.sleep(5)
+at.press("win")
+at.write("chrome")
+at.press("enter")
+tmp.sleep(5)
 
 for linha in tabela.index:
     #comando para transformar em texto o que voltar da tabela
     palavra=str(tabela.loc[linha,"mes"])
-    pyautogui.write(palavra)
-    time.sleep(1)
-    pyautogui.write(" ")
-    time.sleep(1)
+    at.write(palavra)
+    tmp.sleep(1)
+    at.write(" ")
+    tmp.sleep(1)
 
 
 
