@@ -20,13 +20,13 @@ at.write("chrome")
 at.press("enter")
 tmp.sleep(5)
 
-for linha in tabela.index:
+#for linha in tabela.index:
     #comando para transformar em texto o que voltar da tabela
-    palavra=str(tabela.loc[linha,"mes"])
-    at.write(palavra)
-    tmp.sleep(1)
-    at.write(" ")
-    tmp.sleep(1)
+#    palavra=str(tabela.loc[linha,"mes"])
+#    at.write(palavra)
+#    tmp.sleep(1)
+#    at.write(" ")
+#    tmp.sleep(1)
 
 
 
